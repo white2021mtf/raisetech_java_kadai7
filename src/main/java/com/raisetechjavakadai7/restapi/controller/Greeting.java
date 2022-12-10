@@ -1,4 +1,4 @@
-package com.raisetech_Java_kadai7.Java_kadai7_RestApiTest.controller;
+package com.raisetechjavakadai7.restapi.controller;
 
 public class Greeting {
     private final long id;

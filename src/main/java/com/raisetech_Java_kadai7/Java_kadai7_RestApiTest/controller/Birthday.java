@@ -1,4 +1,4 @@
-package com.raisetechjavakadai7.controller;
+package com.raisetech_Java_kadai7.Java_kadai7_RestApiTest.controller;
 
 public class Birthday {
     private final String birthday;
@@ -7,7 +7,7 @@ public class Birthday {
         this.birthday = birthday;
     }
 
-    public String getBirthday() {
+    public String getContent() {
         return birthday;
     }
 }

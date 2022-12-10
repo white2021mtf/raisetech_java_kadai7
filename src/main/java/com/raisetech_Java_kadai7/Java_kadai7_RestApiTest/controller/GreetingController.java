@@ -1,4 +1,4 @@
-package com.raisetechjavakadai7.controller;
+package com.raisetech_Java_kadai7.Java_kadai7_RestApiTest.controller;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
@@ -15,6 +15,10 @@ import java.text.ParseException;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
+
+
+
+
 @RestController
 @Validated  // 追加
 public class GreetingController {
@@ -22,11 +26,13 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();
     private Object name;
 
+
     //年月日のクエリ文字列を受け取れるようにした
     @GetMapping("/birthdays")
     public Birthday birthday(@RequestParam(value = "birthday", defaultValue = "") String  birthday) throws ParseException {
         return new Birthday(String.format(template, birthday));
     }
+
 
     @GetMapping(value = "/validation")
     public String getPerson(
